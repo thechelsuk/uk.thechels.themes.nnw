@@ -85,7 +85,7 @@ body {
 
 .blog-avatar {
     width: 4.5em;
-    min-width: 4.5em;
+    min-width: 2em;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     flex-shrink: 0;
@@ -101,7 +101,7 @@ body {
 }
 
 .blog-title {
-    font-size: 3em;
+    font-size: 2em;
     font-family: TheChelsMedium, -system-ui, "Gill Sans", sans-serif;
     line-height: 1;
     outline: none
@@ -112,64 +112,15 @@ body {
     color: var(--primary)
 }
 
-.blog-title a:active,
-.blog-title a:hover {
-    text-decoration: none
-}
-
 .blog-slogan {
     font-size: 0.9em;
     color: var(--secondary);
     margin-top: 0.2em
 }
 
-.blog-menu {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center
-}
-
-.blog-menu a {
-    color: var(--links);
-    font-size: 0.9em;
-    padding: 0.25em 0.5em;
-    white-space: nowrap;
-    text-decoration: none
-}
-
-.blog-menu a:hover,
-.blog-menu a:focus {
-    color: var(--accent);
-    text-decoration: underline
-}
-
-.blog-menu a:not(:first-child)::before {
-    content: "\00b7";
-    margin-right: 0.5em;
-    color: var(--primary);
-    pointer-events: none;
-    user-select: none;
-    display: inline-block
-}
 
 main:focus {
     outline: none
-}
-
-.primary {
-    color: var(--primary)
-}
-
-.secondary {
-    color: var(--secondary)
-}
-
-.links {
-    color: var(--links)
-}
-
-.accent {
-    color: var(--accent)
 }
 
 .highlight>pre {
@@ -198,10 +149,6 @@ main:focus {
     font-family: TheChelsMedium, -system-ui, "Gill Sans", sans-serif
 }
 
-:is(h1, h2, h3, h4, h5, h6):hover::after {
-    content: " #";
-    color: var(--accent)
-}
 
 :is(h1, h2, h3, h4, h5, h6) a {
     text-decoration: none;
