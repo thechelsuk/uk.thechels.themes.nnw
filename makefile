@@ -11,17 +11,22 @@ ZIP = ./thechelsuk.nnwtheme_v$(VERSION).zip
 
 .DEFAULT: all
 
-.PHONY: all clean install
+.PHONY: all clean install dist tidy
 
-all: clean build
+all: dist
+
+dist: clean build tidy
 
 clean:
 	-rm -rf $(PKG)
 
-install: all
+install: clean $(PKG)
 	open $(PKG)/.
 
 build: $(PKG) $(ZIP)
+
+tidy:
+	-rm -rf $(PKG)
 
 $(PKG):
 	mkdir -p $(PKG)
