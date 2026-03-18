@@ -10,7 +10,7 @@
 }
 
 :root {
-    --background: #f5f4f4;
+    --background: #ffffff;
     --primary: #04100d;
     --secondary: #005ca3;
     --links: #295147;
@@ -39,7 +39,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #232946;
+        --background: #000000;
         --primary: #fffffe;
         --secondary: #eebbc3;
         --links: #b8c1ec;
@@ -71,6 +71,9 @@ body {
     color: var(--primary);
     background: var(--background);
     box-sizing: border-box;
+    max-width: 48em;
+    margin: 0 auto;
+    padding: 1.5em;
 }
 
 .flow>*+* {
@@ -88,7 +91,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5em;
-    padding-bottom: 0.6em;
+    padding-bottom: 1em;
     border-bottom: 2px solid var(--accent)
 }
 
@@ -99,8 +102,8 @@ body {
 }
 
 .blog-avatar {
-    width: 3em;
-    min-width: 2em;
+    width: 2.5em;
+    min-width: 2.5em;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     flex-shrink: 0;
@@ -116,7 +119,7 @@ body {
 }
 
 .blog-title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: TheChelsMedium, -system-ui, "Gill Sans", sans-serif;
     line-height: 1;
     outline: none
@@ -134,10 +137,6 @@ body {
 }
 
 
-main:focus {
-    outline: none
-}
-
 .highlight>pre {
     background: var(--code);
     color: var(--primary);
@@ -147,13 +146,19 @@ main:focus {
     border: 1px solid #121212
 }
 
+.footer {
+    border-top: 2px solid var(--accent);
+    display: block;
+    width: 100%;
+}
 
 .meta {
     color: var(--secondary);
     display: block;
     float: right;
     margin-right: 0;
-    font-size: 0.8em
+    font-size: 0.8em;
+    margin-top: 1.5em;
 }
 
 
