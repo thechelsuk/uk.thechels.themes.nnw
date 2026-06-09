@@ -4,9 +4,11 @@ A collection of themes for [NetNewsWire](https://netnewswire.com/).
 
 ## Themes
 
-- guro; a light mode only, clean and minimal
-- thechelsuk; adaptive to device light/dark mode and is based on the thechels.uk website design
-- retro; dark only theme, red text.
+- Fresh, a light theme, based on thechels.uk 'morning' theme
+- Guro; a light mode only, clean and minimal.
+- Thechelsuk; adaptive to device light/dark mode and is based on the thechels.uk website design
+- Retro; dark-only theme, red text.
+- Magda; dark-only theme, with gray text and custom fonts, for easy reading.
 
 ## Install
 

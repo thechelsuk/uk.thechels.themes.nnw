@@ -157,8 +157,6 @@ body {
 .meta {
     color: var(--secondary);
     display: block;
-    float: right;
-    margin-right: 0;
     font-size: 0.8em;
     margin-top: 1.5em;
 }
