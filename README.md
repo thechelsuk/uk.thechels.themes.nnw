@@ -88,7 +88,7 @@ scripts/template-scripts/youtube-link-rewrite.js
 ./scripts/inject-template-scripts.sh
 ```
 
-## Test locally:
+## Test locally
 
 Open any `test/*.html` file in a browser. Test files reference the source scripts directly, so no build step is needed for testing.
 
