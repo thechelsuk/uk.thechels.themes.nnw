@@ -172,11 +172,7 @@
             NodeFilter.SHOW_TEXT,
             {
                 acceptNode: function (node) {
-                    // Skip if parent is already an anchor
-                    if (
-                        node.parentElement &&
-                        node.parentElement.tagName === "A"
-                    ) {
+                    if (node.parentElement && node.parentElement.closest("a")) {
                         return NodeFilter.FILTER_REJECT;
                     }
                     // Skip if in excluded container
@@ -267,9 +263,9 @@
             NodeFilter.SHOW_TEXT,
             {
                 acceptNode: function (node) {
-                    // Skip if parent is already an anchor or already processed
+                    // Skip if nested anywhere inside an anchor (not just a direct child) or already processed
                     if (node.parentElement) {
-                        if (node.parentElement.tagName === "A") {
+                        if (node.parentElement.closest("a")) {
                             return NodeFilter.FILTER_REJECT;
                         }
                         if (
